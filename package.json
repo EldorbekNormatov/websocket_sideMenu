@@ -1,0 +1,9 @@
+{
+  "type": "module",
+  "dependencies": {
+    "ws": "^8.18.3"
+  },
+  "scripts": {
+    "dev": "node ./src/server.js"
+  }
+}
