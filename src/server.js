@@ -10,10 +10,11 @@ const clients = {
 
 wss.on("connection", (socket, req) => {
 
-   console.log(req.url);
+    console.log(req.url);
     const url = new URL(req.url, "http://localhost");
 
     // FRONT WebApp kirganda ?user=USERID bo'ladi. LOCAL TEST bo'lsa null yoki undefined bo'ladi.
+    console.log(url);
     let userId = url.searchParams.get("user");
     console.log("WS: connection from user =", userId);
 
